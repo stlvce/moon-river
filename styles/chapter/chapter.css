@@ -1,0 +1,65 @@
+/* ВЫБОР РАЗДЕЛА */
+.gender {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 21px;
+  height: 587px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.gender > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  width: 710px;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.gender > div:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+.gender div:first-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/gender/man.jpg") no-repeat 50% 50%;
+}
+
+.gender div:last-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/gender/woman.jpg") no-repeat 50% 50%;
+}
+
+.gender span {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.gender h2 {
+  font: 64px Forum;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+}
+
+.gender h2::after {
+  display: block;
+  content: "";
+  width: 130px;
+  border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 700px) {
+  .gender {
+    flex-wrap: wrap;
+  }
+}

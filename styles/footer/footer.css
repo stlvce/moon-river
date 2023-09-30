@@ -1,0 +1,101 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 160px 90px 160px;
+  background: #272727;
+  color: #fff;
+  min-height: 390px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.footer-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-content > div div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content > div:first-child div {
+  gap: 20px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.footer-submit-email {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+}
+
+.footer-submit-email input[type="email"] {
+  flex-grow: 1;
+}
+
+.footer-submit-email-input:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 40px 20px 90px;
+    margin-top: 20px;
+    gap: 30px;
+  }
+
+  .footer-nav {
+    gap: 20px;
+  }
+
+  .footer-nav a {
+    font-size: 12px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

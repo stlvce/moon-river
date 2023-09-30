@@ -1,0 +1,21 @@
+@import url("./header/header.css");
+@import url("./chapter/chapter.css");
+@import url("./find/find.css");
+@import url("./prices/prices.css");
+@import url("./sm/sm.css");
+@import url("./getNews/getNews.css");
+@import url("./footer/footer.css");
+
+/* TODO: futura pt шрифт */
+@font-face {
+  font-family: Forum;
+  src: url("../fonts/Forum/Forum-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

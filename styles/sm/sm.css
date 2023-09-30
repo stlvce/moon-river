@@ -1,0 +1,74 @@
+.sm {
+  background: #272727;
+  margin-top: 20px;
+  padding: 100px 0;
+  color: #fff;
+  height: 100%;
+}
+
+.sm h2 {
+  font-family: Forum;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  margin-left: 162px;
+}
+
+.carousel {
+  display: flex;
+  gap: 25px;
+  text-wrap: nowrap;
+  overflow-x: scroll;
+  margin-top: 80px;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+.sm-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 162px;
+  margin-top: 80px;
+}
+
+.sm-footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel-controler {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 700px) {
+  .sm {
+    margin-top: 20px;
+    padding: 50px 0;
+  }
+
+  .sm h2 {
+    font-size: 36px;
+
+    margin-left: 20px;
+  }
+
+  .carousel {
+    margin-top: 40px;
+  }
+
+  .sm-footer {
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+
+  .carousel-controler {
+    visibility: hidden;
+  }
+}

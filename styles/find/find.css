@@ -1,0 +1,89 @@
+/* ПОИСК МАГАЗИНОВ */
+.find {
+  display: flex;
+  justify-content: space-between;
+  height: 604px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.find > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  flex-grow: 1;
+}
+
+.find h2,
+.find p,
+.find form {
+  width: 386px;
+}
+
+.find h2 {
+  font: 48px Forum;
+  letter-spacing: 1.44px;
+}
+
+.find p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 16px;
+}
+
+.find form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-top: 64px;
+  border-bottom: 2px solid #fff;
+}
+
+.find form input[type="text"] {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+.map {
+  background: lightgray;
+  background: url("../../img/find/map.jpg"), lightgray 50% / cover no-repeat;
+  width: 730px;
+}
+
+.form-address-submit:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .map {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@media (max-width: 700px) {
+  .find {
+    flex-wrap: wrap;
+    height: 400px;
+  }
+
+  .find h2 {
+    font: 36px Forum;
+    letter-spacing: 1.44px;
+  }
+
+  .find > div:first-child {
+    padding: 0 20px;
+  }
+
+  .find h2,
+  .find p,
+  .find form {
+    width: 300px;
+  }
+}
